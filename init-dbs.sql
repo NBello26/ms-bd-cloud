@@ -15,17 +15,16 @@ CREATE TABLE usuarios (
     nombre VARCHAR(50) NOT NULL,
     ocupacion VARCHAR(255),
     telefono VARCHAR(255) NOT NULL,
-    session_id VARCHAR(255),
     tipo_usuario VARCHAR(100)
 );
 
--- Se eliminó la columna "password" y sus respectivos valores
+-- Se eliminó la columna "password" y "session_id" y sus respectivos valores
 INSERT INTO usuarios 
-(id, correo, direccion, edad, foto_url, genero, nombre, ocupacion, telefono, session_id, tipo_usuario) 
+(id, correo, direccion, edad, foto_url, genero, nombre, ocupacion, telefono, tipo_usuario) 
 VALUES
-(1, 'ma@test.com', 'sucasa', 21, 'https://img.com/foto.jpg', 'Binario', 'Mayckol', 'Estudiante', '1231231', NULL, 'cliente'),
-(2, 'ni.bello@duocuc.cl', 'Avenida mirador', 24, 'https://img.com/', 'Masculino', 'Nicolas', 'Estudiante', '1231231', NULL, 'admin'),
-(3, 'ro.vargas@duocuc.cl', 'xddd', 27, 'img.com', 'Masculino', 'Rodrigo', 'Estudiante', '123123123', NULL, 'cliente');
+(1, 'ma@test.com', 'sucasa', 21, 'https://img.com/foto.jpg', 'Binario', 'Mayckol', 'Estudiante', '1231231', 'cliente'),
+(2, 'ni.bello@duocuc.cl', 'Avenida mirador', 24, 'https://img.com/', 'Masculino', 'Nicolas', 'Estudiante', '1231231', 'admin'),
+(3, 'ro.vargas@duocuc.cl', 'xddd', 27, 'img.com', 'Masculino', 'Rodrigo', 'Estudiante', '123123123', 'cliente');
 
 -- Actualizamos el contador de IDs para que el próximo usuario registrado sea el ID 4 (basado en el MAX id)
 SELECT setval(pg_get_serial_sequence('usuarios', 'id'), (SELECT MAX(id) FROM usuarios));
