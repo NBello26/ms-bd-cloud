@@ -23,7 +23,6 @@ INSERT INTO usuarios
 (id, correo, direccion, edad, foto_url, genero, nombre, ocupacion, telefono, tipo_usuario) 
 VALUES
 (1, 'ma@test.com', 'sucasa', 21, 'https://img.com/foto.jpg', 'Binario', 'Mayckol', 'Estudiante', '1231231', 'cliente'),
-(2, 'ni.bello@duocuc.cl', 'Avenida mirador', 24, 'https://img.com/', 'Masculino', 'Nicolas', 'Estudiante', '1231231', 'admin'),
 (3, 'ro.vargas@duocuc.cl', 'xddd', 27, 'img.com', 'Masculino', 'Rodrigo', 'Estudiante', '123123123', 'cliente');
 
 -- Actualizamos el contador de IDs para que el próximo usuario registrado sea el ID 4 (basado en el MAX id)
