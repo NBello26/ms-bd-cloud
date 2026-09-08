@@ -48,9 +48,10 @@ CREATE TABLE productos (
 
 INSERT INTO productos (nombre, descripcion, precio, stock, activo, fecha_creacion, fecha_actualizacion) 
 VALUES
-('Laptop Pro M2', 'Laptop de alto rendimiento para desarrolladores', 1250.50, 15, true, NOW(), NOW()),
-('Teclado Mecánico RGB', 'Teclado switch red en español', 85.99, 40, true, NOW(), NOW()),
-('Monitor Ultrawide 34"', 'Monitor curvo 144Hz', 450.00, 10, true, NOW(), NOW());
+('Funko Pop! Naruto Uzumaki', 'Figura coleccionable de vinilo de Naruto Modo Sabio, edición especial', 24990, 15, true, NOW(), NOW()),
+('Peluche Snorlax Gigante', 'Peluche súper suave y pachoncito de Snorlax, tamaño 60cm', 39990, 8, true, NOW(), NOW()),
+('Katana Nichirin Tanjiro - Demon Slayer', 'Réplica decorativa escala 1:1, ideal para cosplay o exhibición', 119990, 5, true, NOW(), NOW()),
+('Figura Articulada Goku (Agotado)', 'Figura de acción de Dragon Ball Z con manos y rostros intercambiables', 34990, 0, true, NOW(), NOW());
 
 SELECT setval(pg_get_serial_sequence('productos', 'id'), (SELECT MAX(id) FROM productos));
 
