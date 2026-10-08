@@ -23,7 +23,7 @@ INSERT INTO usuarios
 (id, correo, direccion, edad, foto_url, genero, nombre, ocupacion, telefono, tipo_usuario) 
 VALUES
 (1, 'ma@test.com', 'sucasa', 21, 'https://img.com/foto.jpg', 'Binario', 'Mayckol', 'Estudiante', '1231231', 'cliente'),
-(3, 'ro.vargas@duocuc.cl', 'xddd', 27, 'img.com', 'Masculino', 'Rodrigo', 'Estudiante', '123123123', 'cliente');
+(3, 'ro.vargasr@duocuc.cl', 'xddd', 27, 'img.com', 'Masculino', 'Rodrigo', 'Estudiante', '123123123', 'cliente');
 
 SELECT setval(pg_get_serial_sequence('usuarios', 'id'), (SELECT MAX(id) FROM usuarios));
 
