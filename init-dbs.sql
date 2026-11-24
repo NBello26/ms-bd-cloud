@@ -174,3 +174,6 @@ VALUES
 (1, 'EN_PREPARACION', 'Orden recibida, preparando paquete', NOW());
 
 SELECT setval(pg_get_serial_sequence('despachos', 'id'), (SELECT MAX(id) FROM despachos));
+
+
+CREATE DATABASE db_pagos;
