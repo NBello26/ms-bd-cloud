@@ -211,20 +211,22 @@ spring.datasource.url=jdbc:postgresql://<HOST_BD>:5432/db_carrito
 
 ## 🔗 Ecosistema de Repositorios
 
-### Backend
-
-* [Microservicio Carrito](https://github.com/Raynagah/cloud-backend-carrito)
-* [BFF Orchestrator](https://github.com/Raynagah/cloud-backend-bff)
-* [Microservicio Producto](https://github.com/Raynagah/cloud-backend-producto)
-* [Microservicio Usuarios](https://github.com/NBello26/ms-usuarios-cloud.git)
-
 ### Frontend
 
 * [Frontend React](https://github.com/Raynagah/cloud-frontend.git)
 
-### Base de Datos
+### Backend
 
-* **Este repositorio:** Configuración y scripts de PostgreSQL para Pedidos360
+* [BFF Orchestrator](https://github.com/Raynagah/cloud-backend-bff)
+* [Microservicio Producto](https://github.com/Raynagah/cloud-backend-producto)
+* [Microservicio Carrito](https://github.com/Raynagah/cloud-backend-carrito)
+* [Microservicio Usuarios](https://github.com/NBello26/ms-usuarios-cloud.git)
+* [Microservicio Base de Datos (Este repositorio)](https://github.com/NBello26/ms-bd-cloud)
+* [Microservicio Ordenes](https://github.com/Raynagah/cloud-backend-ordenes)
+* [Microservicio Notificaciones](https://github.com/Raynagah/cloud-backend-notificaciones)
+* [Microservicio Despacho](https://github.com/Raynagah/cloud-backend-despacho)
+* [Microservicio Pago](https://github.com/Raynagah/cloud-backend-pago)
+* [Microservicio Analítica](https://github.com/Raynagah/cloud-backend-analitica)
 
 ---
 
